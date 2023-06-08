@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liste de contacts</title>
+</head>
+<body>
+<style>
+    .list-style-none{
+        list-style: none;
+    }
+</style>
+
+    <div class="titre" id="tire"> <h3>Repertoire de contacts</h3></div>
+    <div class="formulaire">
+    <form action="">
+        <h4>Formulaire de contact</h4>
+        <div class="lastname"> 
+            <label for="prenom" > Prenom</label>
+            <input type="text"  id="prenom" class="taille" autofocus required>
+        </div>
+        <div class="name">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" class="taille" required>
+        </div>
+        <div class="group"> 
+            <label for="group">Groupe</label>
+            <select name="" id="group" class="taille" required>
+            <option value=""  ></option>
+            <option value="Famille">Famille</option>
+            <option value="Amis">Amis</option>
+            <option value="Collegue">Collegue</option>
+        </select>
+        </div>
+        <div class="Bio">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="5" class="tailleb" required></textarea>
+        </div> 
+        <div class="upload">
+            <div>
+            <label class="lab" for="img_inp"> Choisir photo</label>
+            <input type="file" id="img_inp" name="image" accept="image/*" onchange="loadfile(event)" class="tll" >
+        </div>
+             <div class="parent-output"><img src="" id="output"></div>
+            </div>
+            
+   
+            
+         <div class="button">
+            <div class="creer"> <input id="créer"  class="btn" type="submit" value="Créer"></div>
+           
+            <div class="Reset"> <input  id="reinit"  type="reset" class="btn"> </div>
+    </div> 
+    </form>
+<div class="liste_rep">
+    <h4>Liste de contacts</h4>
+    <div id="contains">
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
